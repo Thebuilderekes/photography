@@ -1,0 +1,769 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root{
+
+    --extarlarge-font-size: 50px;
+    --large-font-size: 36px;
+    --medium-font-size: 24px;
+    --normal-font-size: 16px;
+
+}
+
+
+
+
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    background: #000000;
+
+
+}
+
+html {
+    scroll-behavior: smooth;
+
+}
+
+::-moz-selection { /* Code for Firefox */
+    color: white;
+    background: blueviolet;
+  }
+  
+  ::selection {
+    color: white;
+    background: blueviolet;
+  }
+
+header {
+    width: 100%;
+    padding: 50px 20px 20px 20px;
+    position: fixed;
+}
+
+
+
+.nav-bar {
+    display: flex;
+     justify-content: space-between; 
+}
+
+
+.nav-bar .logo a {
+    
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Della Respira', serif;
+    color: #ffffff; 
+    padding: 10px 0;
+    transition: all 1s ease;
+
+
+}
+
+#mobile-nav {
+    width: 100%;
+    height: 100%;
+   background: rgb(36, 35, 35);
+   z-index: 20;
+   position: absolute;
+   top: 0;
+  
+    display: none;
+}
+
+#nav-items {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+
+}
+#nav-items  a {
+    padding: 5px 0 0 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 72px;
+    text-transform: uppercase;
+    font-family: 'Archivo Black', sans-serif;
+    transition: all 0.9s ease;
+
+}
+
+#nav-items  a:hover {
+    color: rgb(122, 122, 122);
+}
+
+
+
+
+
+
+
+.close-menu {
+    position: absolute;
+    top: 50px;
+    right: 20px;
+  }
+
+  .fa-times {
+      color: #ffffff;
+    font-size: var(--large-font-size);
+}
+
+
+
+.col-2 .open-menu {
+
+    z-index: 12;
+ 
+ }
+
+ .images {
+     margin: 200px 0 0 0;
+ }
+
+ .images .images-wrapper { 
+     display: flex;
+     justify-content: space-evenly;
+     margin: 30px 0;
+ }
+
+footer {
+    background: #0d0d0d
+}
+ footer p {
+     text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Della Respira', serif;
+    color: #ffffff; 
+    padding: 10px 0;
+    transition: all 1s ease;
+
+}
+  
+
+
+/*==============================================================*/
+/*======================== MEDIA QUERIES ===================*/
+/*=============================================================*/
+
+
+@media screen and (max-width: 1200px){
+    h1  {
+        font-size: var(--extarlarge-font-size);
+        font-family: 'Cinzel', serif;
+        margin: 0 auto;
+        color: rgb(0, 0, 0);
+    }
+    
+    
+    h2 {
+        font-size: var(--medium-font-size); 
+        font-family: 'Cinzel', serif;
+        color: #ffffff;
+    }
+    
+    h2 span {
+        color: rgb(0, 0, 0);
+        font-size: var(--medium-font-size)
+    }
+    
+    
+    .nav-bar {
+        display: flex;
+         justify-content: space-between; 
+    
+    
+        
+    
+    }
+    
+    
+    a {
+        text-decoration: none;
+    }
+    .logo {
+        display: flex;
+    }
+    .logo p{
+        color: aliceblue;
+        transition: all 1s ease;
+        transition: all 1s ease;
+        transition: all 1s ease
+    }
+    
+    
+    #mobile-nav {
+        width: 100%;
+        height: 100%;
+       background: rgb(36, 35, 35);
+       z-index: 20;
+       position: absolute;
+       top: 0;
+      
+        display: none;
+    }
+    
+    #nav-items {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10%;
+    
+    }
+    #nav-items  a {
+        padding: 5px 0 0 10px;
+        text-decoration: none;
+        color: white;
+        font-size: 72px;
+        text-transform: uppercase;
+        font-family: 'Archivo Black', sans-serif;
+        transition: all 0.9s ease;
+    
+    }
+    
+    #nav-items  a:hover {
+        color: rgb(122, 122, 122);
+    }
+    
+    
+    p {
+        display: block;
+        text-decoration: none;
+        font-size: 20px;
+        font-family: 'Della Respira', serif;
+        color: #ffffff; 
+        padding: 10px 0;
+        transition: all 1s ease;
+    
+    }
+    
+    
+    
+    
+    .close-menu {
+        position: absolute;
+        top: 50px;
+        right: 20px;
+      }
+    
+      .fa-times {
+          color: #ffffff;
+        font-size: var(--large-font-size);
+    }
+    
+    
+    
+    .col-2 .open-menu {
+    
+        z-index: 12;
+     
+     }
+    
+     .images {
+         margin-top: 200px 30px 0 30px;
+     }
+    
+     .images .images-wrapper { 
+         display: flex;
+         justify-content: space-around;
+         margin: 50px 0;
+     }
+    }   
+    
+    
+
+    @media screen and (max-width: 1000px){
+        h1  {
+            font-size: var(--extarlarge-font-size);
+            font-family: 'Cinzel', serif;
+            margin: 0 auto;
+            color: rgb(0, 0, 0);
+        }
+        
+        
+        h2 {
+            font-size: var(--medium-font-size); 
+            font-family: 'Cinzel', serif;
+            color: #ffffff;
+        }
+        
+        h2 span {
+            color: rgb(0, 0, 0);
+            font-size: var(--medium-font-size)
+        }
+        
+        
+        .nav-bar {
+            display: flex;
+             justify-content: space-between; 
+        
+        
+            
+        
+        }
+        
+        
+        a {
+            text-decoration: none;
+        }
+        .logo {
+            display: flex;
+        }
+        .logo p{
+            color: aliceblue;
+            transition: all 1s ease;
+            transition: all 1s ease;
+            transition: all 1s ease
+        }
+        
+        
+        #mobile-nav {
+            width: 100%;
+            height: 100%;
+           background: rgb(36, 35, 35);
+           z-index: 20;
+           position: absolute;
+           top: 0;
+          
+            display: none;
+        }
+        
+        #nav-items {
+            display: flex;
+            flex-direction: column;
+            margin-top: 10%;
+        
+        }
+        #nav-items  a {
+            padding: 5px 0 0 10px;
+            text-decoration: none;
+            color: white;
+            font-size: 72px;
+            text-transform: uppercase;
+            font-family: 'Archivo Black', sans-serif;
+            transition: all 0.9s ease;
+        
+        }
+        
+        #nav-items  a:hover {
+            color: rgb(122, 122, 122);
+        }
+        
+        
+        p {
+            display: block;
+            text-decoration: none;
+            font-size: 20px;
+            font-family: 'Della Respira', serif;
+            color: #ffffff; 
+            padding: 10px 0;
+            transition: all 1s ease;
+        
+        }
+        
+        
+        
+        
+        .close-menu {
+            position: absolute;
+            top: 50px;
+            right: 20px;
+          }
+        
+          .fa-times {
+              color: #ffffff;
+            font-size: var(--large-font-size);
+        }
+        
+        
+        
+        .col-2 .open-menu {
+        
+            z-index: 12;
+         
+         }
+
+         .images {
+            margin-top: 200px 30px 0 30px;
+        }
+        
+        
+         .images .images-wrapper { 
+             display: flex;
+             justify-content: space-around;
+             margin: 50px 0;
+         }
+        }    
+    
+@media screen and (max-width: 768px){
+
+    h1  {
+        font-size: var(--extarlarge-font-size);
+        font-family: 'Cinzel', serif;
+        margin: 0 auto;
+        color: rgb(0, 0, 0);
+    }
+    
+    
+    h2 {
+        font-size: var(--medium-font-size); 
+        font-family: 'Cinzel', serif;
+        color: #ffffff;
+    }
+    
+    h2 span {
+        color: rgb(0, 0, 0);
+        font-size: var(--medium-font-size)
+    }
+    
+    
+    .nav-bar {
+        display: flex;
+         justify-content: space-between; 
+    
+    
+        
+    
+    }
+    
+    
+    a {
+        text-decoration: none;
+    }
+    .logo {
+        display: flex;
+    }
+    .logo p{
+        color: aliceblue;
+        transition: all 1s ease;
+        transition: all 1s ease;
+        transition: all 1s ease
+    }
+    
+    
+    #mobile-nav {
+        width: 100%;
+        height: 100%;
+       background: rgb(36, 35, 35);
+       z-index: 20;
+       position: absolute;
+       top: 0;
+      
+        display: none;
+    }
+    
+    #nav-items {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10%;
+    
+    }
+    #nav-items  a {
+        padding: 5px 0 0 10px;
+        text-decoration: none;
+        color: white;
+        font-size: 72px;
+        text-transform: uppercase;
+        font-family: 'Archivo Black', sans-serif;
+        transition: all 0.9s ease;
+    
+    }
+    
+    #nav-items  a:hover {
+        color: rgb(122, 122, 122);
+    }
+    
+    
+    p {
+        display: block;
+        text-decoration: none;
+        font-size: 20px;
+        font-family: 'Della Respira', serif;
+        color: #ffffff; 
+        padding: 10px 0;
+        transition: all 1s ease;
+    
+    }
+    
+    
+    
+    
+    .close-menu {
+        position: absolute;
+        top: 50px;
+        right: 20px;
+      }
+    
+      .fa-times {
+          color: #ffffff;
+        font-size: var(--large-font-size);
+    }
+    
+    
+    
+    .col-2 .open-menu {
+    
+        z-index: 12;
+     
+     }
+    
+     .images {
+         margin-top: 200px;
+     }
+    
+     .images .images-wrapper { 
+         display: flex;
+         justify-content: space-around;
+         margin: 50px 0;
+     }
+      
+}
+
+@media screen and (max-width: 500px){
+
+    h1  {
+        font-size: var(--extarlarge-font-size);
+        font-family: 'Cinzel', serif;
+        margin: 0 auto;
+        color: rgb(0, 0, 0);
+    }
+    
+    
+    h2 {
+        font-size: var(--medium-font-size); 
+        font-family: 'Cinzel', serif;
+        color: #ffffff;
+    }
+    
+    h2 span {
+        color: rgb(0, 0, 0);
+        font-size: var(--medium-font-size)
+    }
+    
+    
+    .nav-bar {
+        display: flex;
+         justify-content: space-between; 
+    
+    
+        
+    
+    }
+    
+    
+    a {
+        text-decoration: none;
+    }
+    .logo {
+        display: flex;
+    }
+    .logo p{
+        color: aliceblue;
+        transition: all 1s ease;
+        transition: all 1s ease;
+        transition: all 1s ease
+    }
+    
+    
+    #mobile-nav {
+        width: 100%;
+        height: 100%;
+       background: rgb(36, 35, 35);
+       z-index: 20;
+       position: absolute;
+       top: 0;
+      
+        display: none;
+    }
+    
+    #nav-items {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10%;
+    
+    }
+    #nav-items  a {
+        padding: 5px 0 0 10px;
+        text-decoration: none;
+        color: white;
+        font-size: 72px;
+        text-transform: uppercase;
+        font-family: 'Archivo Black', sans-serif;
+        transition: all 0.9s ease;
+    
+    }
+    
+    #nav-items  a:hover {
+        color: rgb(122, 122, 122);
+    }
+    
+    
+    p {
+        display: block;
+        text-decoration: none;
+        font-size: 20px;
+        font-family: 'Della Respira', serif;
+        color: #ffffff; 
+        padding: 10px 0;
+        transition: all 1s ease;
+    
+    }
+    
+    
+    
+    
+    .close-menu {
+        position: absolute;
+        top: 50px;
+        right: 20px;
+      }
+    
+      .fa-times {
+          color: #ffffff;
+        font-size: var(--large-font-size);
+    }
+    
+    
+    
+    .col-2 .open-menu {
+    
+        z-index: 12;
+     
+     }
+    
+     .images {
+         margin-top: 200px;
+     }
+    
+     .images .images-wrapper { 
+         display: flex;
+         justify-content: space-around;
+         margin: 50px 0;
+     }
+      
+}
+
+@media screen and (max-width: 400px){
+    h1  {
+        font-size: var(--extarlarge-font-size);
+        font-family: 'Cinzel', serif;
+        margin: 0 auto;
+        color: rgb(0, 0, 0);
+    }
+    
+    
+    h2 {
+        font-size: var(--medium-font-size); 
+        font-family: 'Cinzel', serif;
+        color: #ffffff;
+    }
+    
+    h2 span {
+        color: rgb(0, 0, 0);
+        font-size: var(--medium-font-size)
+    }
+    
+    
+    .nav-bar {
+        display: flex;
+         justify-content: space-between; 
+    
+    
+        
+    
+    }
+    
+    
+    a {
+        text-decoration: none;
+    }
+    .logo {
+        display: flex;
+    }
+    .logo p{
+        color: aliceblue;
+        transition: all 1s ease;
+        transition: all 1s ease;
+        transition: all 1s ease
+    }
+    
+    
+    #mobile-nav {
+        width: 100%;
+        height: 100%;
+       background: rgb(36, 35, 35);
+       z-index: 20;
+       position: absolute;
+       top: 0;
+      
+        display: none;
+    }
+    
+    #nav-items {
+        display: flex;
+        flex-direction: column;
+        margin-top: 40%;
+    
+    }
+    #nav-items  a {
+        padding: 5px 0 20px 10px;
+        text-decoration: none;
+        color: white;
+        font-size: 25px;
+        text-transform: uppercase;
+        font-family: 'Archivo Black', sans-serif;
+        transition: all 0.9s ease;
+    
+    }
+    
+    #nav-items  a:hover {
+        color: rgb(122, 122, 122);
+    }
+    
+    
+    
+    
+    
+    .close-menu {
+        position: absolute;
+        top: 50px;
+        right: 20px;
+      }
+    
+      .fa-times {
+          color: #ffffff;
+        font-size: var(--large-font-size);
+    }
+    
+    
+    
+    .col-2 .open-menu {
+    
+        z-index: 12;
+     
+     }
+    
+     .images {
+         margin-top: 200px;
+     }
+
+     img {
+         margin: 30px 10px;
+     }
+    
+     .images .images-wrapper { 
+         display: flex;
+         flex-direction: column;
+         margin: 30px 0;
+     }
+      
+    }    
