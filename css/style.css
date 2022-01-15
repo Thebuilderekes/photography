@@ -33,15 +33,6 @@ html {
 
 }
 
-::-moz-selection { /* Code for Firefox */
-    color: white;
-    background: blueviolet;
-  }
-  
-  ::selection {
-    color: white;
-    background: blueviolet;
-  }
 
 header {
     width: 100%;
@@ -49,7 +40,9 @@ header {
     position: fixed;
 }
 
-
+a {
+    text-decoration: none;
+}
 
 .nav-bar {
     display: flex;
@@ -142,12 +135,15 @@ footer {
  footer p {
      text-align: center;
     text-decoration: none;
-    font-size: 20px;
     font-family: 'Della Respira', serif;
     color: #ffffff; 
     padding: 10px 0;
     transition: all 1s ease;
 
+}
+
+footer p a {
+    color: rgb(166, 22, 223);
 }
   
 
@@ -359,17 +355,7 @@ footer {
         }
         
         
-        p {
-            display: block;
-            text-decoration: none;
-            font-size: 20px;
-            font-family: 'Della Respira', serif;
-            color: #ffffff; 
-            padding: 10px 0;
-            transition: all 1s ease;
-        
-        }
-        
+      
         
         
         
