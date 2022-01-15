@@ -333,8 +333,8 @@ footer {
            z-index: 20;
            position: absolute;
            top: 0;
-          
             display: none;
+            overflow-y: hidden;
         }
         
         #nav-items {
