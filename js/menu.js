@@ -2,22 +2,20 @@
 const navMenu = document.getElementById("mobile-nav");
 const close =  document.getElementById("close-menu");
 const open =  document.getElementById("open-menu");
+const page =  document.getElementById("page");
 
 
-// open.addEventListener("click", function(){
-
-//     nav.style.display =  "block";
-    
-// })
 
 
 function openMenu(){
     navMenu.style.display =  "block";
+    page.style.overflowY = "hidden";
  
 }
 
 
 function closeMenu(){
     navMenu.style.display =  "none"
+    page.style.overflowY = "scroll";
 }
 
