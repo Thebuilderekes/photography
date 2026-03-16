@@ -96,7 +96,7 @@ footer {
 }
 
 #nav-items a {
-    padding: 5px 0 0 10px;
+    padding: 10px 0 0 10px;
     color: rgb(36, 35, 35);
     font-size: 72px;
     text-transform: uppercase;
@@ -128,6 +128,66 @@ footer {
 /* ==========================================
    3. CONTENT & FOOTER
    ========================================== */
+#loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #000000 75%, #160d14 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Stays above everything */
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+/* The Downward D Arch as a Loader */
+.deep-arch-loader {
+    width: 60px;
+    height: 100px;
+
+    border: 3px solid #E75480;
+    border-radius: 0 0 30px 30px; /* The deep arch you requested */
+    animation: pulse 2.5s infinite ease-in-out;
+}
+
+.loader-text {
+    margin-top: 20px;
+    font-family: 'Cinzel', serif;
+    color: #ffffff;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-size: 14px;
+    text-align: center;
+}
+
+@keyframes pulse {
+    0% { transform: scale(0.9); opacity: 0.5; }
+    50% { transform: scale(1); opacity: 1; border-color: #ffffff; }
+    100% { transform: scale(0.9); opacity: 0.5; }
+}
+
+/* Class to hide the loader */
+.loader-hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* This removes the focus outline from the main content
+   so it doesn't show up after the loader disappears */
+#main-content:focus {
+    outline: none;
+}
+
+/* Optional: If you want to be extra safe,
+   ensure the loader-wrapper is completely removed from view */
+#loader-wrapper.loader-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none; /* This ensures you can't click it accidentally */
+}
+
 
 h1 {
   color: var(--white);
@@ -148,7 +208,7 @@ h1 {
     height: 500px;
     background-color: var(--pink);
     /* Flat top, rounded bottom semicircle */
-    border-radius: 250px 250px 0 0;
+    border-radius: 300px 300px 0 0;
     /* Optional: centering on page */
     display: flex;
     flex-direction: column;
@@ -159,6 +219,7 @@ h1 {
 
 .profile-frame img {
     width: 400px;
+    margin-top: 20px;
     height: 500px;
     border-radius: 200px 200px 0 0;
 
@@ -227,8 +288,8 @@ footer p a {
 
 h1 {
   font-size: var(--large-font-size);
-  font-family: 'librebaskerville-bold';
   text-align: center;
+  text-transform:lowercase;
   margin: 20px 0;
 }
 
