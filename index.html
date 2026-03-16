@@ -4,97 +4,92 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="website of an actor/artist">
-    <meta name="keywords" content="drawing, art, visual art, pencil drawing, atist, actor">
-    <title> Photography - Official website</title>
+    <meta name="description" content="Expert bridal, editorial, and glam makeup by Glams by Tee. Based in Yenagoa, Bayelsa, and available for travel across Nigeria for weddings and events.">
+    <meta name="keywords" content="make up artist">
+    <title>Glams by Tee | Professional Makeup Artist Yenagoa & Destination MUA</title>
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://glamsbytee.vercel.app/">
+    <meta property="og:title" content="Glams by Tee">
+    <meta property="og:description" content="Glams by Tee ">
+    <meta property="og:image" content="https://glamsbytee.vercel.app/assets/og-image.jpg">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://glamsbytee.vercela.app/">
+  <meta property="twitter:title" content="Glams by Tee | Makeup Artist in based in Nigeria">
+  <meta property="twitter:description" content="Traveling makeup artist. Get the perfect glow for your big day with Glams by Tee.">
+    <meta property="twitter:image" content="https://glamsbytee/assets/og-image.jpg">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Della+Respira&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Cinzel:wght@600&family=Della+Respira&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
     <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="js/scrollReveal.js"></script>
-    <link rel="stylesheet" href="css/style.css" />
-    <link
-      rel="stylesheet"
-      href="/assets/fontawesome-free-5.15.4-web/css/all.css"
-    />
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-
   </head>
   <body id="body">
     <header>
-          <nav class="nav-bar" id="nav-bar">
-              <div class="logo" >
-                  <a class="logo-link" href="index.html"> LOGO</a>
-              </div>
-        
-        <div class="menu-btn">  
-          <a class="open-menu" id="open-menu"  onclick="openMenu()" href="#">
-            <span style="font-size: 2rem;">
-            <span style="color: white;">
-            <i class="fas fa-bars fa-spin"></i> 
+      <nav class="nav-bar" id="nav-bar" aria-label="Main Navigation">
+        <div class="logo">
+          <a class="logo-link" href="index.html" aria-label="Go to Homepage">LOGO</a>
+        </div>
+
+        <div class="menu-btn">
+          <button class="open-menu-btn" id="open-menu-btn" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-nav">
+            <span style="font-size: 2rem; color: white;">
+              <i class="fas fa-bars" aria-hidden="true"></i>
             </span>
-          </a>
+          </button>
         </div>
       </nav>
     </header>
 
+    <div id="mobile-nav" role="dialog" aria-modal="true" aria-label="Mobile menu">
 
-    <div id="mobile-nav">
-           <span style="font-size: 2rem;">
-           <span style="color: white;">
-               <a class="close-menu" id="close-menu"  onclick="closeMenu()" href="#"><i class="fas fa-times"></i> </a>
-          </span>
-         </span>
-          <nav id="nav-items" >
-                <a class="punchline1 " href="index.html">home</a>
-                <a class="punchline2 animate__animated animate__bounce" href="/pages/work.html">Instagram</a>
-                <a class="punchline3 active" href="/pages/about.html">Twitter</a>
-                <a class="punchline3 active" href="/pages/about.html">Email@mail.com</a>
-          </nav>
+      <nav class="nav">
+
+      <button class="close-menu-btn" id="close-menu-btn" aria-controls="mobile-nav" aria-label="Close navigation menu">
+        <span style="font-size: 2rem;">
+          <i class="fas fa-times" style="color: black" aria-hidden="true"></i>
+        </span>
+      </button>
+      <ul id="nav-items">
+        <li>
+        <a class="nav-link" href="#">Home</a>
+        </li>
+        <li>
+        <a class="nav-link" href="">Instagram</a>
+        </li>
+        <li>
+        <a class="nav-link" href="">Whatsapp</a>
+        </li>
+        <li>
+        <a class="nav-link" href="mailto:Email@mail.com">Email Us</a>
+        </li>
+      </ul>
+      </nav>
     </div>
 
-<section class="images">
-            <div class="images-wrapper  images-wrapper1">
-                    <img src="https://via.placeholder.com/300" alt="placeholder image" class="img">
-                    <img src="https://via.placeholder.com/300" alt="placeholder image" class="img">
-                    <img src="https://via.placeholder.com/300"  alt="placeholder image" class="img">
-              </div>
+    <main id="main-content">
+      <section class="hero-container">
 
-              <div class=" images-wrapper images-wrapper2">
-                    <img src="https://via.placeholder.com/300" alt="placeholder image" class="img">
-                    <img src="https://via.placeholder.com/300" alt="placeholder image" class="img">
-                    <img src="https://via.placeholder.com/300" alt="placeholder image" class="img">
-            </div>
+      <h1 class="heading">Flawless Beauty beyond borders</h1>
+<div class="profile-frame downward-d" aria-label="Portrait of Tee">
+    <img src="./assets/img/tee-portrait.avif" alt="Glams by Tee professional portrait">
+    <span class="sr-only">Photo by <a href="https://unsplash.com/@reecevandermerwe?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Reece van der Merwe</a> on <a href="https://unsplash.com/photos/a-woman-with-a-red-manicure-on-her-nails-F_JclIZa4D8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span>
 
-            <div class=" images-wrapper images-wrapper3">
-                  <img src="https://via.placeholder.com/300" alt="placeholder image" class="img"> 
-                  <img src="https://via.placeholder.com/300" alt="placeholder image" class="img">
-                  <img src="https://via.placeholder.com/300" alt="placeholder image" class="img">
-            </div>            
-</section>
+</div>
+      </section>
+     </main>
 
+    <footer>
+      <p>Designed and coded by <a href="https://twitter.com/iamthebuilder__" aria-label="Visit Ekeopre's Twitter profile">Ekeopre</a></p>
+    </footer>
 
-<footer>
-    <p>Designed and coded by  <a href="https://twitter.com/iamthebuilder__">Ekeopre</a> </p>
-</footer>
-
-    <script src="js/menu.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/scrollReveal.js"></script>
   </body>
 </html>
+

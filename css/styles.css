@@ -1,0 +1,252 @@
+/* ==========================================
+   1. GLOBAL STYLES & VARIABLES
+   ========================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --extralarge-font-size: 80px;
+    --large-font-size: 36px;
+    --medium-font-size: 24px;
+    --normal-font-size: 16px;
+
+
+    --white: #f5f5f5;
+    --black: #000000;
+    --pink:  #E75480;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+background: linear-gradient(135deg, #000000 60%, #160d14 100%);
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    width: 100%;
+    padding: 20px;
+    z-index: 10;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+}
+
+
+footer {
+  position: fixed;
+  width:100%;
+  left: 0;
+  bottom: 0;
+}
+
+/* ==========================================
+   2. NAVIGATION
+   ========================================== */
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-bar .logo a {
+    font-size: 20px;
+    font-family: 'Della Respira', serif;
+    color: #ffffff;
+    padding: 10px 0;
+}
+
+#mobile-nav {
+    width: 100%;
+    height: 100%;
+    z-index: 20;
+    background-color: #f8f8f8;
+    position: fixed; /* Changed to fixed to cover screen */
+    top: 0;
+    display: none;
+}
+
+.nav close-menu-btn {
+  position: absolute;
+  right: 0;
+  top: 5%;
+
+}
+
+#nav-items {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+}
+
+#nav-items a {
+    padding: 5px 0 0 10px;
+    color: rgb(36, 35, 35);
+    font-size: 72px;
+    text-transform: uppercase;
+    font-family: 'Archivo Black', sans-serif;
+    transition: all 0.4s ease;
+}
+
+#nav-items a:hover { color:var(--pink); }
+
+.close-menu-btn {
+    position: absolute;
+    cursor: pointer;
+    top: 50px;
+    right: 20px;
+}
+
+.fa-times {
+    color: #ffffff;
+    font-size: var(--large-font-size);
+}
+
+.open-menu-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 12;
+}
+
+/* ==========================================
+   3. CONTENT & FOOTER
+   ========================================== */
+
+h1 {
+  color: var(--white);
+  font-style: italic;
+  font-family: 'Cinzel', serif;
+}
+
+.hero-container{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px 20px;
+  justify-content: space-between;
+}
+
+
+.profile-frame {
+    width: 600px;
+    height: 500px;
+    background-color: var(--pink);
+    /* Flat top, rounded bottom semicircle */
+    border-radius: 250px 250px 0 0;
+    /* Optional: centering on page */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.profile-frame img {
+    width: 400px;
+    height: 500px;
+    border-radius: 200px 200px 0 0;
+
+}
+
+footer {
+    background: #0d0d0d;
+    padding: 20px 0;
+}
+
+footer p {
+    text-align: center;
+    font-family: 'Della Respira', serif;
+    color: var(--white);
+    padding: 10px 0;
+}
+
+footer p a {
+    color: rgb(166, 22, 223);
+}
+
+/* ==========================================
+   4. MEDIA QUERIES (Overrides only)
+   ========================================== */
+
+@media screen and (max-width: 1200px) {
+    #nav-items { margin-top: 20%; }
+    #nav-items a:hover { color: #E75480; }
+
+    h1 {
+        font-size: var(--extralarge-font-size);
+        font-family: 'Cinzel', serif;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #nav-items { margin-top: 30%; }
+    #mobile-nav { overflow-y: hidden; }
+}
+
+@media screen and (max-width: 935px) {
+    #nav-items a { font-size: 60px; padding-bottom: 10px; }
+    .images .images-wrapper { flex-wrap: wrap; }
+    img { margin: 30px 0; }
+}
+
+@media screen and (max-width: 768px) {
+    #nav-items { margin-top: 25%; }
+}
+
+@media screen and (max-width: 620px) {
+    #nav-items { margin-top: 30%; }
+    #nav-items a { font-size: 50px; }
+}
+
+@media screen and (max-width: 500px) {
+    #nav-items a {
+    font-size: 30px;
+  }
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: var(--large-font-size);
+  font-family: 'librebaskerville-bold';
+  text-align: center;
+  margin: 20px 0;
+}
+
+.profile-frame{
+    width: 300px;
+    height: 400px;
+}
+
+.profile-frame img{
+    width: 200px;
+    height: 300px;
+
+
+}
+
+@media screen and (max-width: 400px) {
+    #nav-items { margin-top: 40%; }
+    #nav-items a { font-size: 25px; padding-bottom: 20px; }
+    .images .images-wrapper { flex-direction: column; }
+    img { margin: 30px 10px; }
+}
