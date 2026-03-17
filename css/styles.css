@@ -288,7 +288,7 @@ footer p a {
 }
 
 h1 {
-  font-size: var(--large-font-size);
+  font-size: var(--semi-large-font-size);
   text-align: center;
   text-transform:lowercase;
   margin: 20px 0;
