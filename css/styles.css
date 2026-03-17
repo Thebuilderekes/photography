@@ -308,7 +308,7 @@ h1 {
 
 @media screen and (max-width: 400px) {
     #nav-items { margin-top: 40%; }
-    #nav-items a { font-size: var(--large-font-size); padding: 15px 0; }
+    #nav-items a { font-size: var(--large-font-size); padding: 50px 0; }
     .images .images-wrapper { flex-direction: column; }
     img { margin: 30px 10px; }
 }
