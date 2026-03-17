@@ -1,0 +1,17 @@
+# Dependencies
+node_modules/
+dist/
+build/
+
+# Assets & Minified files
+*.min.css
+*.min.js
+assets/img/
+
+# System & Config
+.DS_Store
+package-lock.json
+.prettierrc.json
+
+# HTML files you want to keep as-is (optional)
+# index.html
