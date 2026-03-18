@@ -8,30 +8,34 @@
 }
 
 :root {
-  --extralarge-font-size: 42px;
+  --extralarge-font-size: 50px;
   --large-font-size: 40px;
   --semi-large-font-size: 36px;
-  --medium-font-size: 24px;
+  --medium-font-size: 26px;
+  --semi-medium-font-size: 20px;
   --normal-font-size: 16px;
 
-  --white: #f5f5f5;
+  --white: #f8f8f8;
   --black: #000000;
+  --alt-black: #0c0c0c;
   --pink: #e75480;
-  --pink-darker: color-mix(in srgb, var(--pink), black 20%); /* Mix with 20% black */
+  --pink-darker: color-mix(in srgb, var(--pink), black 30%); /* Mix with 20% black */
 
 }
 
 html {
-  scroll-behavior: sm}
+  scroll-behavior: smooth
+}
 
 html,
 body {
   width: 100%;
+  min-height: 100vh;
   overflow-x: hidden;
 }
 
 body {
-  background: linear-gradient(135deg, #000000 60%, #160d14 100%);
+  background: linear-gradient(135deg, var(--black) 60%, var(--alt-black) 100%);
   display: flex;
   flex-direction: column;
 }
@@ -74,10 +78,8 @@ button {
 
 
 footer {
-  position: fixed;
-  width: 100%;
-  left: 0;
-  bottom: 0;
+  position:sticky;
+  top: 100vh;
 }
 
 /* ==========================================
@@ -86,6 +88,7 @@ footer {
 .nav-bar {
   display: flex;
   justify-content: space-between;
+  padding: 0 30px;
 }
 
 .nav-bar .logo a {
@@ -223,21 +226,11 @@ footer {
 }
 
 /* hero section Styling */
-h1 {
-  color: var(--white);
-  font-family: "Della Respira", serif;
-  margin-bottom: 30px;
-}
-
-.colored-text {
-  color: var(--pink);
-  font-style: italic;
-}
 
 .hero-container {
   display: flex;
   flex-wrap: wrap;
-  margin: 50px 20px;
+  margin: 50px;
   justify-content: space-between;
   opacity: 0;
   transform: translateY(20px); /* Optional: slides up slightly */
@@ -255,16 +248,35 @@ h1 {
   transform: translateY(0);
 }
 
+h1 {
+  color: var(--white);
+  font-family: "Della Respira", serif;
+  text-transform: capitalize;
+  font-family: 700;
+}
+
+.colored-text {
+  color: var(--pink);
+  font-style: italic;
+}
+
+p.sub-p{
+  color: var(--white);
+  margin: 10px 0 30px 0;
+  font-family: "Della Respira", serif;
+}
+
+
+
 /* Ensure the main content doesn't show a ring when focused */
 #main-content:focus {
   outline: none;
 }
 
-
 .profile-frame {
-  width: 600px;
+  width: 500px;
   height: 500px;
-  background-color: var(--pink);
+  background-color: var(--pink-darker);
   /* Flat top, rounded bottom semicircle */
   border-radius: 300px 300px 0 0;
   /* Optional: centering on page */
@@ -282,8 +294,8 @@ h1 {
 
 /* portfolio section Styling */
 .portfolio-section {
-  padding: 100px 5%;
-  background: #000000;
+  padding: 50px;
+  background: var(--alt-black) ;
 }
 
 .portfolio-header {
@@ -326,7 +338,6 @@ h1 {
   width: 100%;
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 100px 100px 0 0; /* Adjust based on width for deeper arch */
   transition: transform 0.5s ease;
 }
 
@@ -347,11 +358,11 @@ h1 {
 
 .category {
   margin-top: 15px;
-  font-family: "Archivo Black", sans-serif;
-  font-size: 12px;
+  font-family: "Della Respira", serif;
+  font-weight: 900;
   text-transform: uppercase;
-  color: #666;
-  letter-spacing: 2px;
+  color: #f8f8f8;
+  letter-spacing: 1px;
 }
 
 /* Responsive Grid */
@@ -398,17 +409,24 @@ footer p a {
     font-size: var(--extralarge-font-size);
   }
 
+p.sub-p{
+  font-size: var(--medium-font-size);
+
+}
 
 a.book-btn {
   color: var(--white);
-  background: var(--pink);
+  display: flex;
+  align-items: center;
+  display: inline-block;
+  background: var(--pink-darker);
   font-size: var(--medium-font-size);
   padding: 10px;
 }
 
 
 a.book-btn:hover {
-background: var(--pink-darker);
+background: var(--pink);
 }
 
 }
@@ -423,20 +441,29 @@ background: var(--pink-darker);
     font-size: var(--large-font-size);
   }
 
-  .images .images-wrapper {
-    flex-wrap: wrap;
-  }
   img {
-    margin: 30px 0;
+    margin-top: 30px;
   }
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
 }
 
- @media screen and (max-width: 800px) {
+}
+
+@media screen and (max-width: 800px) {
 h1 {
 
-    font-size: var(--large-font-size);
+    font-size: var(--medium-font-size);
 }
 
+p.sub-p{
+  font-size: var(--normal-font-size);
+
+}
  }
 
 @media screen and (max-width: 620px) {
@@ -461,7 +488,7 @@ h1 {
     align-items: center;
   }
 
-  .heading-container {
+  .hero-container__text{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -472,6 +499,10 @@ h1 {
     font-size: var(--semi-large-font-size);
     text-align: center;
     margin: 20px 0;
+  }
+
+  p.sub-p {
+  font-size: var(--semi-medium-font-size);
   }
 
 .book-btn {
