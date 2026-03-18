@@ -47,6 +47,11 @@ header {
   z-index: 10;
 }
 
+
+.container {
+  padding: 0 30px;
+}
+
 a {
   text-decoration: none;
   font-family: "Della Respira", serif;
@@ -88,11 +93,12 @@ footer {
 .nav-bar {
   display: flex;
   justify-content: space-between;
-  padding: 0 30px;
+  padding: 5px 30px;
 }
 
 .nav-bar .logo a {
   font-size: 20px;
+  font-weight: 700;
   font-family: "Della Respira", serif;
   color: #ffffff;
   padding: 10px 0;
@@ -173,14 +179,15 @@ footer {
 
 /* The Downward D Arch as a Loader */
 .deep-arch-loader {
-  width: 60px;
-  height: 100px;
+  width: 100px;
+  height: 150px;
   border: 3px solid var(--pink);
   border-radius: 30px 30px 0 0 ; /* The deep arch you requested */
   animation: pulse 2.5s infinite ease-in-out;
 }
 
 .loader-text {
+  font-size: var(--medium-font-size);
   margin-top: 20px;
   font-family: "Cinzel", serif;
   color: #ffffff;
@@ -250,8 +257,9 @@ footer {
 
 h1 {
   color: var(--white);
-  font-family: "Della Respira", serif;
-  text-transform: capitalize;
+  /* font-family: "Della Respira", serif; */
+
+  font-family: "Cinzel", serif;
   font-family: 700;
 }
 
@@ -307,6 +315,7 @@ p.sub-p{
   font-family: "Cinzel", serif;
   font-size: var(--large-font-size);
   color: #ffffff;
+  text-align: center;
   text-transform: uppercase;
   letter-spacing: 4px;
 }
@@ -314,6 +323,7 @@ p.sub-p{
 .section-subtitle {
   font-family: "Della Respira", serif;
   font-size: var(--medium-font-size);
+  text-align: center;
   color: var(--pink); /* Glam Pink */
   margin-top: 10px;
 }
@@ -377,6 +387,79 @@ p.sub-p{
     column-count: 1;
   }
 }
+
+.how-it-works {
+    padding: 50px 0;
+    background: var(--bg-main);
+}
+
+.process-list {
+    list-style: none;
+    margin-top: 60px;
+    position: relative;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Vertical line connecting the steps */
+.process-list::before {
+    content: '';
+    position: absolute;
+    left: 30px;
+    top: 0;
+    width: 1px;
+    height: 100%;
+}
+
+.process-item {
+    display: flex;
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.step-number {
+    font-family: 'Archivo Black', sans-serif;
+    color: var(--white);
+    font-size: 1.5rem;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--pink-darker) ;
+    border-radius: 50%;
+    z-index: 2;
+    flex-shrink: 0;
+}
+
+.step-content {
+    margin-left: 40px;
+    padding-top: 10px;
+    color: var(--white)
+}
+
+.step-content h3 {
+    font-family: 'Cinzel', serif;
+    color: var(--text-main);
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.step-content p {
+    font-family: 'Della Respira', serif;
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 600px) {
+    .process-list::before { left: 20px; }
+    .step-number { width: 40px; height: 40px; font-size: 1rem; }
+    .step-content { margin-left: 20px; }
+}
 footer {
   background: #0d0d0d;
   padding: 20px 0;
@@ -428,6 +511,12 @@ a.book-btn {
 a.book-btn:hover {
 background: var(--pink);
 }
+
+
+.step-content p {
+  font-size: var(--medium-font-size)
+}
+
 
 }
 @media screen and (max-width: 1000px) {
@@ -488,6 +577,7 @@ p.sub-p {
   }
 
   .hero-container__text{
+    width: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -513,13 +603,20 @@ p.sub-p{
 }
   .profile-frame {
     width: 300px;
-    height: 400px;
+    height: 300px;
   }
 
   .profile-frame img {
     width: 200px;
     height: 300px;
   }
+
+
+.step-content p {
+  font-size: var(--normal-font-size);
+}
+
+
 }
 
 @media screen and (max-width: 400px) {
