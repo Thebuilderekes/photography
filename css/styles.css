@@ -460,10 +460,9 @@ h1 {
     font-size: var(--medium-font-size);
 }
 
-p.sub-p{
-  font-size: var(--normal-font-size);
-
-}
+p.sub-p {
+  font-size: var(--semi-medium-font-size);
+  }
  }
 
 @media screen and (max-width: 620px) {
@@ -501,9 +500,11 @@ p.sub-p{
     margin: 20px 0;
   }
 
-  p.sub-p {
-  font-size: var(--semi-medium-font-size);
-  }
+
+p.sub-p{
+  text-align: center;
+
+}
 
 .book-btn {
   background: var(--pink);
