@@ -46,11 +46,6 @@ header {
   z-index: 10;
 }
 
-
-.container {
-  padding: 0 30px;
-}
-
 a {
   text-decoration: none;
   font-family: "Della Respira", serif;
@@ -278,6 +273,7 @@ a.book-btn{
   display: flex;
   align-items: center;
   display: inline-block;
+  padding: 10px 15px;
   background: var(--pink-darker);
 }
 
@@ -394,7 +390,7 @@ a.book-btn{
 }
 
 .how-it-works {
-    padding: 50px 20px;
+    margin: 50px 20px;
     background: var(--bg-main);
 }
 
@@ -506,11 +502,6 @@ p.sub-p{
 
 
 a.book-btn {
-  background: var(--pink);
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
-  padding: 10px 15px;
   font-size: var(--medium-font-size);
 }
 
@@ -618,11 +609,8 @@ p.sub-p{
 }
 
 a.book-btn {
-  background: var(--pink);
   display: flex;
-  align-items: center;
   gap: 5px;
-  padding: 10px 15px;
   font-size: var(--normal-font-size);
 
 }
