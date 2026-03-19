@@ -17,6 +17,7 @@
   --normal-font-size: 16px;
 
   --white: #e8e6e6;
+  --off-white: #fffdf7;
   --black: #000000;
   --alt-black: #0c0c0c;
   --pink: #e75480;
@@ -234,6 +235,7 @@ footer {
 .hero-container {
   display: flex;
   flex-wrap: wrap;
+  background: var(--off-white);
   margin: 50px 20px;
   justify-content: space-between;
   opacity: 0;
@@ -304,13 +306,85 @@ a.book-btn{
   border-radius: 200px 200px 0 0;
 }
 
-/* portfolio section Styling */
-.portfolio-section {
-  padding: 50px 20px;
-  background: var(--alt-black) ;
+/* About section styles */
+.about-section {
+  padding: 80px 20px;
+  background-color: var(--white);
+  overflow: hidden;
 }
 
-.portfolio-header {
+.about-flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.about-arch img {
+  width: 400px;
+  height: 400px;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-text .section-title {
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.about-bio {
+  font-family: "Della Respira", serif;
+  color: var(--text-muted);
+  line-height: 1.8;
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+.about-bio strong {
+  color: var(--primary-glam);
+  font-weight: normal;
+}
+
+.about-signature {
+  margin-top: 40px;
+  font-family: "Cinzel", serif;
+  color: var(--text-main);
+}
+
+.signature-name {
+  color: var(--primary-glam);
+  display: block;
+  margin-top: 5px;
+}
+
+/* The Deep Arch for About Image */
+.about-image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+
+/* Responsive Mobile Layout */
+@media (max-width: 968px) {
+  .about-flex {
+    text-align: center;
+    gap: 40px;
+  }
+
+  .about-text .section-title {
+    text-align: center;
+  }
+}
+
+/* gallery section Styling */
+.gallery-section {
+  padding: 50px 20px;
+  background: var(--black) ;
+}
+
+.gallery-header {
   text-align: center;
   margin-bottom: 60px;
 }
@@ -373,9 +447,11 @@ a.book-btn{
   font-family: "Della Respira", serif;
   font-weight: 900;
   text-transform: uppercase;
-  color: #f8f8f8;
+  color: var(--white);
   letter-spacing: 1px;
 }
+
+
 
 /* Responsive Grid */
 @media screen and (max-width: 900px) {
@@ -391,8 +467,8 @@ a.book-btn{
 }
 
 .how-it-works {
-    margin: 50px 20px;
-    background: var(--bg-main);
+    padding: 50px 20px;
+    background: var(--white);
 }
 
 .process-list {
@@ -631,6 +707,19 @@ a.book-btn {
 
   font-size: var(--semi-medium-font-size);
 }
+
+ .about-flex {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-arch img {
+    margin: 0 auto;
+    width: 250px;
+    height: 300px;
+  }
+
+
 
 .step-content p {
   font-size: var(--normal-font-size);
