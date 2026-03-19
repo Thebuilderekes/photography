@@ -1,3 +1,4 @@
+
 /* ==========================================
    1. GLOBAL STYLES & VARIABLES
    ========================================== */
@@ -35,7 +36,6 @@ body {
 }
 
 body {
-  background: linear-gradient(135deg, var(--black) 60%, var(--alt-black) 100%);
   display: flex;
   flex-direction: column;
 }
@@ -56,10 +56,16 @@ ul {
   list-style: none;
 }
 
+.white-text {
+  color: var(--white);
+}
+
 button {
   background-color: transparent;
   border: none;
 }
+
+
 
 .sr-only {
     position: absolute;
@@ -92,7 +98,7 @@ footer {
   font-size: 20px;
   font-weight: 700;
   font-family: "Della Respira", serif;
-  color: #ffffff;
+  color: var(--black);
 }
 
 #mobile-nav {
@@ -181,7 +187,7 @@ footer {
   font-size: var(--medium-font-size);
   margin-top: 20px;
   font-family: "Cinzel", serif;
-  color: #ffffff;
+  color: var(--white);
   letter-spacing: 5px;
   text-transform: uppercase;
   text-align: center;
@@ -247,7 +253,6 @@ footer {
 }
 
 h1 {
-  color: var(--white);
   /* font-family: "Della Respira", serif; */
 
   font-family: "Cinzel", serif;
@@ -260,7 +265,6 @@ h1 {
 }
 
 p.sub-p{
-  color: var(--white);
   margin-bottom: 20px;
   font-family: "Della Respira", serif;
 }
@@ -314,7 +318,6 @@ a.book-btn{
 .section-title {
   font-family: "Cinzel", serif;
   font-size: var(--large-font-size);
-  color: #ffffff;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 4px;
@@ -419,7 +422,7 @@ a.book-btn{
 
 .step-number {
     font-family: 'Archivo Black', sans-serif;
-    color: var(--white);
+    color: var(--pink);
     font-size: 1.5rem;
     width: 60px;
     height: 60px;
@@ -435,7 +438,6 @@ a.book-btn{
 .step-content {
     margin-left: 40px;
     padding-top: 10px;
-    color: var(--white)
 }
 
 .step-content h3 {
@@ -449,7 +451,6 @@ a.book-btn{
 
 .step-content p {
     font-family: 'Della Respira', serif;
-    color: var(--text-muted);
     line-height: 1.6;
 }
 
