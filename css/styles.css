@@ -275,6 +275,9 @@ a.book-btn {
   background: var(--pink-darker);
 }
 
+a.book-btn:hover {
+  background: var(--pink);
+}
 /* Ensure the main content doesn't show a ring when focused */
 #main-content:focus {
   outline: none;
@@ -315,7 +318,7 @@ a.book-btn {
 
 .about-arch img {
   width: 400px;
-  height: 400px;
+  height: 500px;
 }
 
 .about-text {
@@ -336,7 +339,6 @@ a.book-btn {
 }
 
 .about-bio strong {
-  color: var(--primary-glam);
   font-weight: normal;
 }
 
@@ -344,6 +346,10 @@ a.book-btn {
   margin-top: 40px;
   font-family: "Cinzel", serif;
   color: var(--text-main);
+}
+
+.about-signature p {
+  text-transform: Capitalise;
 }
 
 .signature-name {
@@ -359,7 +365,6 @@ a.book-btn {
   justify-content: center;
 }
 
-
 /* Responsive Mobile Layout */
 @media (max-width: 968px) {
   .about-flex {
@@ -373,16 +378,6 @@ a.book-btn {
 }
 
 
-/* gallery section Styling */
-.gallery-section {
-  padding: 50px 20px;
-  background: var(--black);
-}
-
-.gallery-header {
-  text-align: center;
-  margin-bottom: 60px;
-}
 
 .section-title {
   font-family: "Cinzel", serif;
@@ -459,7 +454,88 @@ a.book-btn {
     column-count: 1;
   }
 }
+/* gallery section Styling */
+.gallery-section {
+  padding: 50px 20px;
+  background: var(--black);
+}
 
+.gallery-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.services-section {
+  padding: 100px 10%;
+  background-color: var(--bg-main);
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  margin-top: 60px;
+}
+
+.service-card {
+  background: hsla(var(--brand-h), var(--brand-s), 72%, 0.03);
+  border: 1px solid hsla(var(--brand-h), var(--brand-s), 72%, 0.1);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--primary-glam);
+  box-shadow: 0 15px 40px hsla(var(--brand-h), var(--brand-s), 72%, 0.2);
+}
+
+.service-arch {
+  width: 100%;
+  height: 250px;
+  border-radius: 0 0 100px 100px; /* Deep Arch Bottom */
+  overflow: hidden;
+}
+
+.service-details {
+  padding: 30px;
+  text-align: center;
+  color: var(--white);
+}
+
+.service-details h3 {
+  font-family: "Cinzel", serif;
+  color: var(--text-main);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+
+.service-desc {
+  font-family: "Della Respira", serif;
+  text-align: left;
+  line-height: 1.6;
+  margin-bottom: 25px;
+  min-height: 80px; /* Keeps card heights consistent */
+}
+
+.price {
+  font-family: "Archivo Black", sans-serif;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: left;
+}
+
+.price span {
+  display: block;
+  font-size: 2rem;
+  color: var(--primary-glam);
+  margin-top: 5px;
+}
 .how-it-works {
   padding: 50px 20px;
   background: var(--alt-black);
@@ -647,13 +723,12 @@ footer p a {
   .hero-container__text {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     margin-bottom: 30px;
   }
 
   h1 {
     font-size: var(--medium-font-size);
-    text-align: center;
     margin: 20px 0;
   }
 
@@ -662,13 +737,14 @@ footer p a {
   }
 
   p.sub-p {
-    text-align: center;
+    text-align: left;
     font-size: var(--normal-font-size);
   }
 
   a.book-btn {
     display: flex;
     gap: 5px;
+    width: fit-content;
     font-size: var(--normal-font-size);
   }
   .profile-frame {
@@ -692,6 +768,11 @@ footer p a {
   .about-flex {
     display: flex;
     flex-direction: column;
+  }
+
+  .about-text p,
+  .signature-name {
+    text-align: left;
   }
 
   .about-arch img {
