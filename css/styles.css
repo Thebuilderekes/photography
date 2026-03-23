@@ -85,6 +85,7 @@ footer {
 .nav-bar {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 20px 30px;
 }
 
@@ -681,6 +682,10 @@ footer p a {
     color: var(--pink);
   }
 
+  #nav-items li {
+    margin: 10px 15px;
+  }
+
   h1 {
     font-size: var(--extralarge-font-size);
   }
@@ -723,7 +728,6 @@ footer p a {
   .hero-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 30px;
   }
 }
@@ -751,10 +755,6 @@ footer p a {
 
   #nav-items a {
     font-size: var(--large-font-size);
-  }
-
-  #nav-items li {
-    margin: 10px 15px;
   }
 
   .hero-container__text {
