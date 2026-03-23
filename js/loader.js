@@ -4,7 +4,7 @@ window.addEventListener("load", function() {
     const hero = document.querySelector(".hero-container");
 
     // Set how long you want the loader to stay (3000 = 3 seconds)
-    const extraWaitTime = 2000;
+    const extraWaitTime = 1000;
 
     setTimeout(() => {
         loader.classList.add("loader-hidden");
