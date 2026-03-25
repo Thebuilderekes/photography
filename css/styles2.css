@@ -26,6 +26,47 @@
     black 30%
   ); /* Mix with 20% black */
 }
+/* della-respira-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Della Respira';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../assets/fonts/della-respira-v24-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+
+/* archivo-black-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Archivo Black';
+  font-style: normal;
+  font-weight: 400;
+
+  src: url('../assets/fonts/archivo-black-v23-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+
+/* cinzel-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Cinzel';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../assets/fonts/cinzel-v26-latin/cinzel-v26-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* cinzel-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Cinzel';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../assets/fonts/cinzel-v26-latin/cinzel-v26-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+
+
 
 html {
   scroll-behavior: smooth;
@@ -47,6 +88,8 @@ header {
   width: 100%;
   z-index: 10;
 }
+
+
 
 a {
   text-decoration: none;
@@ -186,6 +229,7 @@ footer {
   font-size: var(--medium-font-size);
   margin-top: 20px;
   font-family: "Cinzel", serif;
+  font-weight: 700;
   color: var(--white);
   letter-spacing: 5px;
   text-transform: uppercase;
@@ -629,6 +673,7 @@ summary {
     justify-content: space-between;
     align-items: center;
     font-size: 1.1rem;
+    font-weight: 800;
     letter-spacing: 1px;
 }
 
