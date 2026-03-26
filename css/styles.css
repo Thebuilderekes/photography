@@ -387,8 +387,8 @@ a.book-btn:hover {
 
 .about-signature {
   margin-top: 40px;
-  font-family: "Cinzel", serif;
-  color: var(--text-main);
+  font-family: "Della Respira", serif;
+
 }
 
 .about-signature p {
@@ -667,7 +667,6 @@ summary::-webkit-details-marker {
 
 summary .icon::before {
     content: '+';
-    color: var(--primary-glam);
     font-family: 'Archivo Black', sans-serif;
     font-size: 1.5rem;
     transition: transform 0.3s ease;
