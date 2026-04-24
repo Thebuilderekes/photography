@@ -908,7 +908,8 @@ footer p {
 }
 
 footer p a {
-  color: rgb(166, 22, 223);
+  color: var(--white);
+  text-decoration: underline;
 }
 
 /* ==========================================
@@ -921,6 +922,10 @@ footer p a {
   }
   #nav-items a:hover {
     color: var(--pink);
+  }
+
+  #nav-items li {
+    margin: 10px 15px;
   }
 
   h1 {
@@ -947,6 +952,7 @@ footer p a {
     font-size: var(--medium-font-size);
   }
 }
+
 @media screen and (max-width: 1000px) {
   #mobile-nav {
     overflow-y: hidden;

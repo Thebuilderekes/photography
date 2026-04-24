@@ -895,7 +895,8 @@ footer p {
 }
 
 footer p a {
-  color: rgb(166, 22, 223);
+  color: var(--white);
+  text-decoration: underline;
 }
 
 /* ==========================================
