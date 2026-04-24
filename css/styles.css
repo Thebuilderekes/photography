@@ -121,6 +121,12 @@ h2 {
   color: var(--white);
 }
 
+img.about-img {
+  max-width: 100%;
+  height: auto;      /* Maintains the aspect ratio automatically */
+  object-fit: cover;
+}
+
 footer {
   position: sticky;
   top: 100vh;

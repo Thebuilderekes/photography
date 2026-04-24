@@ -49,5 +49,19 @@ document.addEventListener('keydown', (e) => {
     }
 });
 
+const details = document.querySelectorAll("details");
+
+details.forEach((targetDetail) => {
+  targetDetail.addEventListener("click", () => {
+    // When one is clicked, close all others
+    details.forEach((detail) => {
+      if (detail !== targetDetail) {
+        detail.removeAttribute("open");
+      }
+    });
+  });
+});
 })
+
+// Select all details elements
 
