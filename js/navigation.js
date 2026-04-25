@@ -59,18 +59,6 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
   });
-const myImage = document.querySelector('.about-img');
-
-window.addEventListener('resize', () => {
-  // We use a small timeout because the browser needs a
-  // split second to update the currentSrc after a resize
-  setTimeout(() => {
-    console.log("Currently displaying:", myImage.currentSrc);
-  }, 100);
 });
 
-// Run once on load to see the initial choice
-console.log("Initial image:", myImage.currentSrc);
-});
-console.log("working")
 // Select all details elements
